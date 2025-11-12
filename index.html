@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elyon Motiva — Inspire-se e Cresça</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Manuais selecionados de incentivo, desenvolvimento pessoal e motivação. Planos discretos e sofisticados." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Elyon Motiva</div>
+      <nav class="nav">
+        <a href="#about">Sobre</a>
+        <a href="#products">Manuais</a>
+        <a href="#plans">Planos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Manuais que inspiram ação.</h1>
+          <p class="lead">Textos curados para transformar pensamento em hábito. Planos pensados para cada etapa da tua jornada — com respeito, cuidado e discrição.</p>
+          <div class="cta">
+            <a href="#products" class="btn">Ver manuais</a>
+            <a href="#plans" class="btn ghost">Ver planos</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="card-visual">Manual destaque<br><span class="muted">Edição Premium</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>Sobre Elyon Motiva</h2>
+      <p>Criações literárias focadas em incentivo, resiliência e progresso pessoal. Cada manual é escrito e editado com sensibilidade — explicações claras, exercícios práticos e uma voz que respeita o leitor.</p>
+    </section>
+
+    <section id="products" class="container section">
+      <h2>Manuais disponíveis</h2>
+      <div class="grid">
+        <article class="product">
+          <h3>Manual — Começar de Novo</h3>
+          <p class="p-desc">Um guia passo-a-passo para reconstruir rotinas e recuperar foco. Exercícios práticos e espaço para reflexão.</p>
+          <div class="meta">
+            <div class="price">€24</div>
+            <a href="downloads/começar-de-novo.pdf" class="btn small">Pré-visualizar</a>
+            <a href="#checkout" class="btn small ghost">Comprar</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <h3>Manual — Força Silenciosa</h3>
+          <p class="p-desc">Ferramentas para cultivar resistência emocional e autoconfiança com práticas diárias discretas.</p>
+          <div class="meta">
+            <div class="price">€45</div>
+            <a href="downloads/forca-silenciosa.pdf" class="btn small">Pré-visualizar</a>
+            <a href="#checkout" class="btn small ghost">Comprar</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <h3>Manual — Lidera a Tua Vida (Edição Premium)</h3>
+          <p class="p-desc">Conteúdo aprofundado, exercícios guiados, e acesso a conteúdo extra em PDF e áudio.</p>
+          <div class="meta">
+            <div class="price">€95</div>
+            <a href="downloads/lidera-premium.pdf" class="btn small">Pré-visualizar</a>
+            <a href="#checkout" class="btn small ghost">Comprar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="plans" class="container section soft">
+      <h2>Planos de acesso</h2>
+      <p class="muted">Planos com atenção à qualidade e ao suporte. Não são os mais baratos — são pensados para quem procura resultados reais.</p>
+      <div class="plans-grid">
+        <div class="plan card">
+          <h3>Essential</h3>
+          <p class="plan-price">€29 / mês</p>
+          <ul>
+            <li>Acesso a 3 manuais selecionados</li>
+            <li>Atualizações mensais</li>
+            <li>Suporte por email</li>
+          </ul>
+          <a href="#checkout" class="btn">Assinar Essential</a>
+        </div>
+        <div class="plan card recommended">
+          <h3>Professional</h3>
+          <p class="plan-price">€69 / mês</p>
+          <ul>
+            <li>Acesso a toda a biblioteca</li>
+            <li>Webinars mensais exclusivos</li>
+            <li>Sessões de perguntas por trimestre</li>
+          </ul>
+          <a href="#checkout" class="btn">Assinar Professional</a>
+        </div>
+        <div class="plan card">
+          <h3>Premium</h3>
+          <p class="plan-price">€199 / ano</p>
+          <ul>
+            <li>Tudo no Professional</li>
+            <li>Coaching individual (1 sessão/ano)</li>
+            <li>Conteúdo extra em áudio</li>
+          </ul>
+          <a href="#checkout" class="btn">Assinar Premium</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="checkout" class="container section">
+      <h2>Checkout (Exemplo)</h2>
+      <p class="muted">Este formulário é um exemplo. Para aceitar pagamentos reais, integra Stripe, PayPal ou outro provedor seguindo as instruções no README.</p>
+      <form id="orderForm" class="checkout-form">
+        <label>Nome completo<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Escolha (manual / plano)
+          <select name="product" required>
+            <option value="começar">Manual — Começar de Novo — €24</option>
+            <option value="forca">Manual — Força Silenciosa — €45</option>
+            <option value="lidera">Manual — Lidera a Tua Vida (Premium) — €95</option>
+            <option value="essential">Plano Essential — €29/mês</option>
+            <option value="professional">Plano Professional — €69/mês</option>
+            <option value="premium">Plano Premium — €199/ano</option>
+          </select>
+        </label>
+        <label>Mensagem (opcional)<textarea name="message"></textarea></label>
+        <div class="row">
+          <button type="submit" class="btn">Finalizar (Exemplo)</button>
+          <div class="muted small">Após submissão serás orientado como pagar.</div>
+        </div>
+      </form>
+      <div id="orderResult" class="muted small" style="display:none;margin-top:12px"></div>
+    </section>
+
+    <section id="contact" class="container section soft">
+      <h2>Contacto</h2>
+      <p>Preferes falar diretamente? Clique abaixo para enviar mensagem via WhatsApp.</p>
+      <p class="muted"><a href="https://wa.me/2449746677" target="_blank" class="btn">WhatsApp: 9746677</a></p>
+    </section>
+
+    <footer class="container footer">
+      <div>© Elyon Motiva — Todos os direitos reservados</div>
+      <div class="muted">Política de devolução discreta — devolução parcial dentro de 14 dias para manuais digitais.</div>
+    </footer>
+  </main>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var result = document.getElementById('orderResult');
+  result.style.display = 'block';
+  result.innerText = 'Pedido recebido. Iremos enviar instruções de pagamento para o email fornecido.';
+  window.scrollTo({top: result.offsetTop - 40, behavior: 'smooth'});
+});
+</script>
+</body>
+</html>
