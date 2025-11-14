@@ -10,7 +10,7 @@
     a { text-decoration: none; color: #f2c94c; }
     
     nav {
-      position: fixed; top:0; left:0; width:100%; background: rgba(0,0,0,0.9); display:flex; justify-content:center; padding:15px 0; z-index:100;
+      position: fixed; top:0; left:0; width:100%; background: rgba(0,0,0,0.95); display:flex; justify-content:center; padding:15px 0; z-index:100;
     }
     nav a { margin:0 20px; font-weight:bold; transition: 0.3s; }
     nav a:hover { color: #fff; }
@@ -18,48 +18,80 @@
     section { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; text-align:center; }
     h1 { font-size:3rem; color:#f2c94c; margin-bottom:10px; }
     p.subtitle { font-size:1.2rem; opacity:0.8; margin-bottom:40px; }
-    .quote-box { background: rgba(255,255,255,0.05); padding:20px; margin:20px auto; max-width:600px; border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
+    .quote-box { background: rgba(255,255,255,0.05); padding:20px; margin:15px auto; max-width:600px; border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
 
     .btn { display:inline-block; background:#f2c94c; color:#000; padding:15px 25px; border-radius:10px; font-weight:bold; transition:0.3s; margin-top:20px; }
     .btn:hover { background:#fff; }
 
-    footer { padding:20px; text-align:center; font-size:0.9rem; opacity:0.6; background: rgba(0,0,0,0.8); }
+    footer { padding:20px; text-align:center; font-size:0.9rem; opacity:0.6; background: rgba(0,0,0,0.85); }
+
+    /* Scroll suave para seções pequenas */
+    .section-title { margin-bottom: 20px; font-size:2rem; color:#f2c94c; }
   </style>
 </head>
 <body>
 
+  <!-- Menu -->
   <nav>
     <a href="#home">Home</a>
     <a href="#sobre">Sobre</a>
-    <a href="#frases">Frases</a>
+    <a href="#frases1">Frases 1</a>
+    <a href="#frases2">Frases 2</a>
+    <a href="#frases3">Frases 3</a>
     <a href="#contato">Contato</a>
   </nav>
 
+  <!-- Home -->
   <section id="home">
     <h1>Elyon Motiva</h1>
     <p class="subtitle">Motivação que te faz levantar e vencer</p>
   </section>
 
+  <!-- Sobre -->
   <section id="sobre">
     <h1>Sobre</h1>
     <p>Elyon Motiva nasceu para inspirar pessoas a superar desafios e conquistar seus sonhos. Aqui você encontra frases e motivação diária para seguir firme.</p>
   </section>
 
-  <section id="frases">
-    <h1>Frases Motivacionais</h1>
+  <!-- Frases 1 -->
+  <section id="frases1">
+    <h1 class="section-title">Frases Motivacionais 1</h1>
     <div class="quote-box">“A vitória começa na mente antes de acontecer na vida.”</div>
     <div class="quote-box">“Se ninguém acredita em ti, não tem problema. Tu acreditas.”</div>
     <div class="quote-box">“O foco constrói impérios. A distração destrói sonhos.”</div>
     <div class="quote-box">“Não espere pelo momento perfeito, faça o momento ser perfeito.”</div>
+    <div class="quote-box">“A disciplina é o caminho mais curto para o sucesso.”</div>
   </section>
 
+  <!-- Frases 2 -->
+  <section id="frases2">
+    <h1 class="section-title">Frases Motivacionais 2</h1>
+    <div class="quote-box">“Persistência é a chave que abre todas as portas.”</div>
+    <div class="quote-box">“O fracasso é apenas a oportunidade de recomeçar com mais experiência.”</div>
+    <div class="quote-box">“Sonhos não funcionam se você não trabalhar por eles.”</div>
+    <div class="quote-box">“Cada desafio é uma chance de se superar.”</div>
+    <div class="quote-box">“Você é mais forte do que imagina.”</div>
+  </section>
+
+  <!-- Frases 3 -->
+  <section id="frases3">
+    <h1 class="section-title">Frases Motivacionais 3</h1>
+    <div class="quote-box">“Transforme seus medos em combustível para vencer.”</div>
+    <div class="quote-box">“Seja a energia que você quer atrair.”</div>
+    <div class="quote-box">“A coragem não é a ausência do medo, mas a decisão de que algo é mais importante que ele.”</div>
+    <div class="quote-box">“Grandes conquistas começam com pequenos passos.”</div>
+    <div class="quote-box">“O sucesso é a soma de pequenos esforços repetidos diariamente.”</div>
+  </section>
+
+  <!-- Contato -->
   <section id="contato">
     <h1>Contato</h1>
     <p>Fale conosco pelo WhatsApp ou Instagram:</p>
     <a href="https://wa.me/9746677" target="_blank" class="btn">WhatsApp</a>
-    <a href="https://instagram.com/elyonmotiva" target="_blank" class="btn">Instagram</a>
+    <a href="https://instagram.com/_m7ven_" target="_blank" class="btn">Instagram</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2025 Elyon Motiva — Criado por Maurício
   </footer>
