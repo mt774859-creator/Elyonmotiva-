@@ -12,21 +12,21 @@
     nav {
       position: fixed; top:0; left:0; width:100%; background: rgba(0,0,0,0.95); display:flex; justify-content:center; padding:15px 0; z-index:100;
     }
-    nav a { margin:0 20px; font-weight:bold; transition: 0.3s; }
+    nav a { margin:0 15px; font-weight:bold; transition: 0.3s; }
     nav a:hover { color: #fff; }
 
-    section { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; text-align:center; }
-    h1 { font-size:3rem; color:#f2c94c; margin-bottom:10px; }
+    section { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; padding:100px 20px 50px 20px; text-align:center; }
+    h1 { font-size:3rem; color:#f2c94c; margin-bottom:20px; }
     p.subtitle { font-size:1.2rem; opacity:0.8; margin-bottom:40px; }
-    .quote-box { background: rgba(255,255,255,0.05); padding:20px; margin:15px auto; max-width:600px; border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
+    .quote-box { background: rgba(255,255,255,0.05); padding:20px; margin:15px auto; max-width:700px; border-radius:10px; border:1px solid rgba(255,255,255,0.1); text-align:left; }
 
     .btn { display:inline-block; background:#f2c94c; color:#000; padding:15px 25px; border-radius:10px; font-weight:bold; transition:0.3s; margin-top:20px; }
     .btn:hover { background:#fff; }
 
     footer { padding:20px; text-align:center; font-size:0.9rem; opacity:0.6; background: rgba(0,0,0,0.85); }
 
-    /* Scroll suave para seções pequenas */
     .section-title { margin-bottom: 20px; font-size:2rem; color:#f2c94c; }
+    .book-text { max-width: 800px; text-align:left; line-height:1.8; margin:20px auto; padding:10px; background: rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
   </style>
 </head>
 <body>
@@ -38,6 +38,7 @@
     <a href="#frases1">Frases 1</a>
     <a href="#frases2">Frases 2</a>
     <a href="#frases3">Frases 3</a>
+    <a href="#livro">Livro</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -81,6 +82,20 @@
     <div class="quote-box">“A coragem não é a ausência do medo, mas a decisão de que algo é mais importante que ele.”</div>
     <div class="quote-box">“Grandes conquistas começam com pequenos passos.”</div>
     <div class="quote-box">“O sucesso é a soma de pequenos esforços repetidos diariamente.”</div>
+  </section>
+
+  <!-- Livro motivacional -->
+  <section id="livro">
+    <h1 class="section-title">Livro Motivacional</h1>
+    <div class="book-text">
+      <p>Capítulo 1 – A força da mente: Tudo começa na tua cabeça. A forma como pensas determina os teus resultados...</p>
+      <p>Capítulo 2 – Persistência: Grandes conquistas exigem esforço contínuo. Cada passo importa, cada dia conta...</p>
+      <p>Capítulo 3 – Superando o medo: O medo é um sinal de crescimento. Enfrenta-o, aprende e transforma em força...</p>
+      <p>Capítulo 4 – Ação diária: Não existe sucesso sem ação. Pequenos hábitos constroem grandes vitórias...</p>
+      <p>Capítulo 5 – Inspiração contínua: Procure sempre aprender, motivar-se e motivar os outros...</p>
+      <p>Capítulo 6 – Gratidão e foco: Ser grato mantém a mente positiva e o foco ajuda a alcançar metas...</p>
+      <p>Capítulo 7 – Transforme a vida: Aplicando essas ideias, qualquer pessoa pode criar a vida que deseja...</p>
+    </div>
   </section>
 
   <!-- Contato -->
